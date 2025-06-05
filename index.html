@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Using Tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-openSans">
+    <header class="container mx-auto flex justify-between items-center p-6">
+
+        <h1 class="font-bold text-2xl text-blue-400"><a href="">UrbanThreds</a></h1>
+        <span class="md:hidden"><i class="fa-solid fa-bars"></i></span>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="" class="pb-1 hover:border-b-2 hover:border-blue-800">Home</a></li>
+            <li><a href="" class="pb-1 hover:border-b-2 hover:border-blue-800">Features</a></li>
+            <li><a href="" class="pb-1 hover:border-b-2 hover:border-blue-800">Contact</a></li>
+            <li><a href="" class="bg-blue-600 text-white py-2 px-4 rounded transition duration-300 hover:bg-blue-900">Login</a></li>
+        </ul>
+    </header>
+    <section id="hero" class="container mx-auto grid items-center grid-cols-1 md:grid-cols-2 px-6 py-16">
+        <div id="left" class="max-w-lg mb-4 md:mb-0">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl text-white font-extrabold mb-4">Style That Speaks for You.</h2>
+            <p class="mb-4">At <span class="text-blue-400 font-bold">UrbanThreds</span>, we believe fashion is more than just clothing — it’s a reflection
+                 of who you are. Explore our curated collections that blend comfort, style, and 
+                 made to move with you every day.</p>
+            <button class="px-6 py-4 bg-blue-700 text-white rounded-lg transition duration-300 hover:bg-blue-900">Get Started</button>
+        </div>
+        <div id="right">
+            <img src="./assets/shopping.avif" alt="shopping img object-cover"
+            class="rounded-lg shadow-lg aspect-video">
+        </div>
+    </section>
+    <section id="features" class="container mx-auto px-6 py-16">
+        <h2 class="text-center text-3xl font-bold mb-6">Features</h2>
+       
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="feature bg-gray-700 rounded-lg flex flex-col items-center text-center px-6 py-8">
+            <span>👚</span>
+            <h3>Trendy Collections</h3>
+            <p>Discover the latest seasonal styles, handpicked just for you.</p>
+        </div>
+       
+        <div class="feature bg-gray-700 rounded-lg flex flex-col items-center text-center px-6 py-8">
+            <span>🚚</span>
+            <h3>Free & Fast Delivery</h3>
+            <p>Enjoy lightning-fast shipping at no extra cost.</p>
+        </div>
+       
+        <div class="feature bg-gray-700 rounded-lg flex flex-col items-center text-center px-6 py-8">
+            <span>🔁</span>
+            <h3>Easy Returns</h3>
+            <p>Not quite right? Hassle-free returns and exchanges guaranteed.</p>
+        </div>
+        </div>
+    </section>
+    <section id="products" class="container mx-auto px-6 py-16">
+        <h2  class="text-center text-3xl font-bold mb-6">Product Showcase</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="product  bg-gray-700 rounded-lg flex flex-col items-center text-center p-4">
+            <img src="./assets/hoodie.jpg" alt="hoodie" class="rounded mb-4 aspect-video object-cover">
+            <h3 class="text-xl font-semibold text-white">Arctic Chill Premium Hoodie</h3>
+            <p class="text-white mt-1">Stay cozy in style with this ultra-soft, modern-fit hoodie. Minimal design, 
+                maximum comfort—perfect for any season</p>
+            <button class="w-full bg-indigo-400 text-white font-medium py-2 px-4 rounded cursor-pointer hover:bg-indigo-800 mt-11.5">Buy Now</button>
+        </div>
+
+        <div class="product bg-gray-700 rounded-lg flex flex-col items-center text-center p-4">
+            <img src="./assets/shirt.avif" alt="shirt" class="rounded mb-4 aspect-video object-cover">
+            <h3 class="text-xl font-semibold text-white">Urban Edge Classic Shirt</h3>
+            <p class="text-white mt-1">Redefine your everyday look with this crisp, modern-fit shirt. 
+            Light, breathable, and effortlessly stylish—made for bold moves and smart vibes.</p>
+            <button class="w-full bg-indigo-400 text-white font-medium py-2 px-4 rounded cursor-pointer hover:bg-indigo-800 mt-5.5">Buy Now</button>
+        </div>
+
+        <div class="product bg-gray-700 rounded-lg flex flex-col items-center text-center p-4">
+            <img src="./assets/jocket.jpg" alt="jacket" class="rounded mb-4 aspect-video object-fill">
+            <h3 class="text-xl font-semibold text-white">Neon Vibe Quilted Jacket</h3>
+            <p class="text-white mt-1">Make a bold statement with this vibrant, quilted jacket.
+             Crafted for comfort and style, it's your perfect pick for standout winter wear.</p>
+            <button class="w-full bg-indigo-400 text-white font-medium py-2 px-4 rounded cursor-pointer hover:bg-indigo-800 mt-5.5">Buy Now</button>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="text-center text-3xl font-bold mb-6">Contact Us</h2>
+
+    <form action=""
+    class="mx-auto max-w-lg bg-white dark:bg-gray-800 rounded-lg shadow p-8 space-y-6">
+        <div>
+            <label for="" class="font-bold">Name</label>
+            <input type="text" class="form-input"  />
+        </div>
+
+         <div>
+            <label for="" class="font-bold">Email</label>
+            <input type="email" class="form-input"  />
+        </div>
+
+         <div>
+            <label for="" class="font-bold">Message</label>
+            <textarea name="" id=""
+            rows="4"
+            class="form-input"></textarea>
+        </div>
+    <button type="submit" class="w-full bg-indigo-400 text-white font-medium py-2 px-4 rounded cursor-pointer hover:bg-indigo-800 mt-5.5">Send Messeage</button>
+    </form>
+    </section>
+    <footer class="pt-16 pb-8 text-center text-md text-gray-400">&copy; 2025 Mr.Abishek All Rights Reserved</footer>
+</body>
+</html>
